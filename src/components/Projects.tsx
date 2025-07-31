@@ -23,13 +23,40 @@ const Projects: React.FC = () => {
         // Fallback data
         setProjects([
           {
-            title: "Scalable Video Intelligence System",
-            description: "Built a role-based web platform that uses AI/ML to transform live camera feeds into actionable insights with real-time processing capabilities.",
-            techStack: ["React", "NodeJS", "OpenCV", "PaddleOCR", "WebRTC"],
-            imageURL: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800",
-            liveDemoURL: "",
-            githubURL: "",
-            timeline: "Mar 2025 – Present"
+            "title": "Scalable Video Intelligence System",
+            "description": "Built a role-based web platform that uses AI/ML to transform live camera feeds into actionable insights with real-time processing capabilities.",
+            "techStack": ["React", "NodeJS", "OpenCV", "PaddleOCR", "WebRTC"],
+            "imageURL": "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "liveDemoURL": "",
+            "githubURL": "",
+            "timeline": "Mar 2025 – Present"
+          },
+          {
+            "title": "Utsav Event Management Platform",
+            "description": "Full-stack event management system with Firebase integration, featuring real-time updates and comprehensive admin dashboard.",
+            "techStack": ["React", "Firebase", "TailwindCSS", "Firestore"],
+            "imageURL": "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "liveDemoURL": "",
+            "githubURL": "",
+            "timeline": "Jan 2025 – Feb 2025"
+          },
+          {
+            "title": "Coca-Cola Reimagined",
+            "description": "Interactive brand experience website featuring advanced animations and smooth user interactions built with React and GSAP.",
+            "techStack": ["React", "GSAP", "ScrollTrigger", "TailwindCSS"],
+            "imageURL": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "liveDemoURL": "",
+            "githubURL": "",
+            "timeline": "Dec 2024 – Jan 2025"
+          },
+          {
+            "title": "Synthwave Portfolio",
+            "description": "This very portfolio you're viewing - a Stranger Things inspired developer showcase with dynamic content and immersive animations.",
+            "techStack": ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
+            "imageURL": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "liveDemoURL": "",
+            "githubURL": "https://github.com/Shubham-404",
+            "timeline": "Jan 2025"
           }
         ]);
       });
@@ -63,9 +90,8 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`group relative rounded-lg overflow-hidden backdrop-blur-sm transition-all duration-500 ${
-                hoveredProject === index ? 'transform scale-105' : ''
-              }`}
+              className={`group relative rounded-lg overflow-hidden backdrop-blur-sm transition-all duration-500 ${hoveredProject === index ? 'transform scale-105' : ''
+                }`}
               style={{
                 backgroundColor: 'rgba(12, 12, 12, 0.6)',
                 borderColor: 'rgba(255, 44, 88, 0.2)',
@@ -82,7 +108,7 @@ const Projects: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" style={{ background: 'linear-gradient(to top, #0C0C0C, rgba(12, 12, 12, 0.5), transparent)' }}></div>
-                
+
                 {/* Overlay Icons */}
                 <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {project.liveDemoURL && (
@@ -117,8 +143,8 @@ const Projects: React.FC = () => {
               {/* Project Content */}
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold transition-colors duration-300" 
-                      style={{ color: hoveredProject === index ? '#FF2C58' : '#F0F0F0' }}>
+                  <h3 className="text-xl font-bold transition-colors duration-300"
+                    style={{ color: hoveredProject === index ? '#FF2C58' : '#F0F0F0' }}>
                     {project.title}
                   </h3>
                   <Zap className="w-5 h-5 animate-pulse" style={{ color: '#A1FF0A' }} />

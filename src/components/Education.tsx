@@ -20,11 +20,25 @@ const Education: React.FC = () => {
         // Fallback data
         setEducation([
           {
-            institute: "The National Institute of Engineering, Mysuru",
-            degree: "B.E. in Computer Science & Engineering",
-            duration: "Aug 2023 – Jun 2027 (Expected)",
-            gpa: "8.7",
-            subjects: ["Operating Systems", "Database Management Systems", "Algorithm Design & Analysis", "ARM Architecture", "Django Framework"]
+            "institute": "The National Institute of Engineering, Mysuru",
+            "degree": "B.E. in Computer Science & Engineering",
+            "duration": "Aug 2023 – Jun 2027 (Expected)",
+            "gpa": "8.7",
+            "subjects": ["Operating Systems", "Database Management Systems", "Algorithm Design & Analysis", "ARM Architecture", "Django Framework"]
+          },
+          {
+            "institute": "Kendriya Vidyalaya COD Prayagraj",
+            "degree": "Higher Secondary Education (12th)",
+            "duration": "2021 – 2023",
+            "gpa": "94.6%",
+            "subjects": ["Physics", "Chemistry", "Mathematics", "Computer Science", "English"]
+          },
+          {
+            "institute": "Kendriya Vidyalaya COD Prayagraj",
+            "degree": "Secondary Education (10th)",
+            "duration": "2019 – 2021",
+            "gpa": "89.4%",
+            "subjects": ["Mathematics", "Science", "Social Science", "English", "Hindi"]
           }
         ]);
       });
@@ -66,20 +80,20 @@ const Education: React.FC = () => {
               )}
 
               {/* Timeline Dot */}
-              <div className="absolute left-4 top-8 w-4 h-4 rounded-full border-4 z-10 group-hover:scale-125 transition-transform duration-300 animate-pulse" 
-                   style={{ backgroundColor: '#A1FF0A', borderColor: '#0C0C0C' }}></div>
+              <div className="absolute left-4 top-8 w-4 h-4 rounded-full border-4 z-10 group-hover:scale-125 transition-transform duration-300 animate-pulse"
+                style={{ backgroundColor: '#A1FF0A', borderColor: '#0C0C0C' }}></div>
 
               {/* Education Card */}
-              <div className="ml-16 border rounded-lg p-6 backdrop-blur-sm transition-all duration-500 group-hover:transform group-hover:scale-105" 
-                   style={{ backgroundColor: 'rgba(12, 12, 12, 0.6)', borderColor: 'rgba(161, 255, 10, 0.2)' }}
-                   onMouseEnter={(e) => {
-                     e.currentTarget.style.borderColor = 'rgba(161, 255, 10, 0.6)';
-                     e.currentTarget.style.boxShadow = '0 25px 50px rgba(161, 255, 10, 0.2)';
-                   }}
-                   onMouseLeave={(e) => {
-                     e.currentTarget.style.borderColor = 'rgba(161, 255, 10, 0.2)';
-                     e.currentTarget.style.boxShadow = 'none';
-                   }}>
+              <div className="ml-16 border rounded-lg p-6 backdrop-blur-sm transition-all duration-500 group-hover:transform group-hover:scale-105"
+                style={{ backgroundColor: 'rgba(12, 12, 12, 0.6)', borderColor: 'rgba(161, 255, 10, 0.2)' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(161, 255, 10, 0.6)';
+                  e.currentTarget.style.boxShadow = '0 25px 50px rgba(161, 255, 10, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(161, 255, 10, 0.2)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
                 {/* CRT Header */}
                 <div className="border rounded-t-lg p-3 mb-4 font-mono text-sm" style={{ backgroundColor: 'rgba(161, 255, 10, 0.1)', borderColor: 'rgba(161, 255, 10, 0.3)' }}>
                   <div className="flex items-center space-x-2">
@@ -92,10 +106,10 @@ const Education: React.FC = () => {
                   {/* Main Info */}
                   <div className="md:col-span-2 space-y-4">
                     <div>
-                      <h3 className="text-xl font-bold mb-2 transition-colors duration-300" 
-                          style={{ color: '#F0F0F0' }}
-                          onMouseEnter={(e) => e.currentTarget.style.color = '#A1FF0A'}
-                          onMouseLeave={(e) => e.currentTarget.style.color = '#F0F0F0'}>
+                      <h3 className="text-xl font-bold mb-2 transition-colors duration-300"
+                        style={{ color: '#F0F0F0' }}
+                        onMouseEnter={(e) => e.currentTarget.style.color = '#A1FF0A'}
+                        onMouseLeave={(e) => e.currentTarget.style.color = '#F0F0F0'}>
                         {item.institute}
                       </h3>
                       <p className="text-lg" style={{ color: '#8892B0' }}>{item.degree}</p>
@@ -134,11 +148,11 @@ const Education: React.FC = () => {
 
                   {/* Stats */}
                   <div className="space-y-4">
-                    <div className="border rounded-lg p-4 text-center" 
-                         style={{ 
-                           background: 'linear-gradient(to bottom right, rgba(161, 255, 10, 0.1), rgba(0, 255, 228, 0.1))',
-                           borderColor: 'rgba(161, 255, 10, 0.3)'
-                         }}>
+                    <div className="border rounded-lg p-4 text-center"
+                      style={{
+                        background: 'linear-gradient(to bottom right, rgba(161, 255, 10, 0.1), rgba(0, 255, 228, 0.1))',
+                        borderColor: 'rgba(161, 255, 10, 0.3)'
+                      }}>
                       <Award className="w-8 h-8 mx-auto mb-2" style={{ color: '#A1FF0A' }} />
                       <div className="text-2xl font-bold" style={{ color: '#F0F0F0' }}>{item.gpa}</div>
                       <div className="text-sm" style={{ color: '#8892B0' }}>
@@ -146,11 +160,11 @@ const Education: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="border rounded-lg p-4 text-center" 
-                         style={{ 
-                           background: 'linear-gradient(to bottom right, rgba(0, 255, 228, 0.1), rgba(113, 42, 255, 0.1))',
-                           borderColor: 'rgba(0, 255, 228, 0.3)'
-                         }}>
+                    <div className="border rounded-lg p-4 text-center"
+                      style={{
+                        background: 'linear-gradient(to bottom right, rgba(0, 255, 228, 0.1), rgba(113, 42, 255, 0.1))',
+                        borderColor: 'rgba(0, 255, 228, 0.3)'
+                      }}>
                       <GraduationCap className="w-8 h-8 mx-auto mb-2" style={{ color: '#00FFE4' }} />
                       <div className="text-lg font-bold" style={{ color: '#F0F0F0' }}>
                         {index === 0 ? 'Current' : 'Completed'}
