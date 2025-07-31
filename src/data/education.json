@@ -1,0 +1,23 @@
+[
+  {
+    "institute": "The National Institute of Engineering, Mysuru",
+    "degree": "B.E. in Computer Science & Engineering",
+    "duration": "Aug 2023 – Jun 2027 (Expected)",
+    "gpa": "8.7",
+    "subjects": ["Operating Systems", "Database Management Systems", "Algorithm Design & Analysis", "ARM Architecture", "Django Framework"]
+  },
+  {
+    "institute": "Kendriya Vidyalaya COD Prayagraj",
+    "degree": "Higher Secondary Education (12th)",
+    "duration": "2021 – 2023",
+    "gpa": "94.6%",
+    "subjects": ["Physics", "Chemistry", "Mathematics", "Computer Science", "English"]
+  },
+  {
+    "institute": "Kendriya Vidyalaya COD Prayagraj", 
+    "degree": "Secondary Education (10th)",
+    "duration": "2019 – 2021",
+    "gpa": "89.4%",
+    "subjects": ["Mathematics", "Science", "Social Science", "English", "Hindi"]
+  }
+]

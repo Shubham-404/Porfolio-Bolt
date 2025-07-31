@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Scalable Video Intelligence System",
+    "description": "Built a role-based web platform that uses AI/ML to transform live camera feeds into actionable insights with real-time processing capabilities.",
+    "techStack": ["React", "NodeJS", "OpenCV", "PaddleOCR", "WebRTC"],
+    "imageURL": "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "liveDemoURL": "",
+    "githubURL": "",
+    "timeline": "Mar 2025 – Present"
+  },
+  {
+    "title": "Utsav Event Management Platform",
+    "description": "Full-stack event management system with Firebase integration, featuring real-time updates and comprehensive admin dashboard.",
+    "techStack": ["React", "Firebase", "TailwindCSS", "Firestore"],
+    "imageURL": "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "liveDemoURL": "",
+    "githubURL": "",
+    "timeline": "Jan 2025 – Feb 2025"
+  },
+  {
+    "title": "Coca-Cola Reimagined",
+    "description": "Interactive brand experience website featuring advanced animations and smooth user interactions built with React and GSAP.",
+    "techStack": ["React", "GSAP", "ScrollTrigger", "TailwindCSS"],
+    "imageURL": "https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "liveDemoURL": "",
+    "githubURL": "",
+    "timeline": "Dec 2024 – Jan 2025"
+  },
+  {
+    "title": "Synthwave Portfolio",
+    "description": "This very portfolio you're viewing - a Stranger Things inspired developer showcase with dynamic content and immersive animations.",
+    "techStack": ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
+    "imageURL": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "liveDemoURL": "",
+    "githubURL": "https://github.com/Shubham-404",
+    "timeline": "Jan 2025"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "Web Development": ["React", "NodeJS", "TailwindCSS", "GSAP", "ScrollTrigger", "TypeScript", "ExpressJS"],
+  "Databases": ["MySQL", "SQLite3", "Firestore", "MongoDB", "PostgreSQL"],
+  "Languages": ["JavaScript", "Python", "Java", "C", "TypeScript", "SQL"],
+  "Machine Learning": ["OpenCV", "PaddleOCR", "Matplotlib", "Seaborn", "NumPy", "Pandas"],
+  "Tools": ["Firebase", "Git", "Figma", "Notion", "Discord", "VS Code", "Postman"]
+}
