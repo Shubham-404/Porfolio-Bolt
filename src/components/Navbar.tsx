@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
               <Code className="w-8 h-8 animate-pulse" style={{ color: '#FF2C58' }} />
               <div className="absolute inset-0 w-8 h-8 rounded-full animate-ping" style={{ backgroundColor: 'rgba(255, 44, 88, 0.2)' }}></div>
             </div>
-            <span className="text-xl font-bold glitch-text" style={{ color: '#F0F0F0' }}>SHUBHAM.DEV</span>
+            <span className="text-xl font-bold glitch-text" style={{ color: '#F0F0F0' }}>Shubham-404</span>
           </div>
 
           {/* Desktop Navigation */}

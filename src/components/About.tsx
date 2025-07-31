@@ -16,7 +16,7 @@ const About: React.FC = () => {
           summary: "Curious learner with hands-on experience in building responsive, role-based and scalable web apps. Passionate about creating innovative solutions that bridge the gap between cutting-edge technology and real-world applications.",
           highlights: [
             "Focused on designing reliable and secure systems",
-            "Enjoys integrating ML algorithms into web applications", 
+            "Enjoys integrating ML algorithms into web applications",
             "Team-driven development experience with collaborative workflows",
             "Strong foundation in full-stack development and AI/ML integration"
           ]
@@ -76,14 +76,14 @@ const About: React.FC = () => {
               <div className="w-20 h-1 mb-8" style={{ background: 'linear-gradient(to right, #FF2C58, #00FFE4)' }}></div>
             </div>
 
-            <div className="border rounded-lg p-6 backdrop-blur-sm transition-all duration-300" 
-                 style={{ backgroundColor: 'rgba(12, 12, 12, 0.6)', borderColor: 'rgba(255, 44, 88, 0.2)' }}
-                 onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(255, 44, 88, 0.4)'}
-                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(255, 44, 88, 0.2)'}>
+            <div className="border rounded-lg p-6 backdrop-blur-sm transition-all duration-300"
+              style={{ backgroundColor: 'rgba(12, 12, 12, 0.6)', borderColor: 'rgba(255, 44, 88, 0.2)' }}
+              onMouseEnter={(e) => e.currentTarget.style.borderColor = 'rgba(255, 44, 88, 0.4)'}
+              onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(255, 44, 88, 0.2)'}>
               <p className="text-lg leading-relaxed mb-6" style={{ color: '#8892B0' }}>
                 {aboutData.summary}
               </p>
-              
+
               <div className="space-y-4">
                 {aboutData.highlights.map((highlight: string, index: number) => (
                   <div
@@ -103,29 +103,29 @@ const About: React.FC = () => {
 
           {/* Right Column - Visual */}
           <div className="relative">
-            <div className="relative rounded-lg p-8 border backdrop-blur-sm" 
-                 style={{ 
-                   background: 'linear-gradient(to bottom right, rgba(255, 44, 88, 0.1), rgba(0, 255, 228, 0.1))',
-                   borderColor: 'rgba(255, 44, 88, 0.2)'
-                 }}>
+            <div className="relative rounded-lg p-8 border backdrop-blur-sm"
+              style={{
+                background: 'linear-gradient(to bottom right, rgba(255, 44, 88, 0.1), rgba(0, 255, 228, 0.1))',
+                borderColor: 'rgba(255, 44, 88, 0.2)'
+              }}>
               {/* Floating Icons */}
               <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full flex items-center justify-center animate-bounce" style={{ backgroundColor: '#FF2C58' }}>
                 <Code2 className="w-6 h-6" style={{ color: '#F0F0F0' }} />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center animate-bounce" 
-                   style={{ backgroundColor: '#00FFE4', animationDelay: '1s' }}>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center animate-bounce"
+                style={{ backgroundColor: '#00FFE4', animationDelay: '1s' }}>
                 <Brain className="w-6 h-6" style={{ color: '#0C0C0C' }} />
               </div>
 
               <div className="text-center space-y-6">
-                <div className="w-32 h-32 mx-auto rounded-full flex items-center justify-center border-4 animate-pulse" 
-                     style={{ 
-                       background: 'linear-gradient(to bottom right, #FF2C58, #712AFF)',
-                       borderColor: 'rgba(0, 255, 228, 0.3)'
-                     }}>
-                  <User className="w-16 h-16" style={{ color: '#F0F0F0' }} />
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden flex items-center justify-center border-4"
+                  style={{
+                    background: 'linear-gradient(to bottom right, #FF2C58, #712AFF)',
+                    borderColor: 'rgba(0, 255, 228, 0.3)'
+                  }}>
+                  <img src="/sks.png" alt="USER" />
                 </div>
-                
+
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold" style={{ color: '#F0F0F0' }}>Developer Profile</h3>
                   <div className="font-mono" style={{ color: '#FF2C58' }}>Status: ACTIVE</div>
